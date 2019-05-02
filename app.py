@@ -35,7 +35,7 @@ def start_joke():
 @ask.intent("WhosThereIntent")
 def who_is_there():
 	joke_list = jokes.keys()
-	joke_hook = joke_list[random.randint(0,len(joke_list))]
+	joke_hook = joke_list[random.randint(0,len(joke_list) - 1)]
 	return question(joke_hook)
 
 @ask.intent("BlankWhoIntent")
