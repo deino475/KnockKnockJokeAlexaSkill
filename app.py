@@ -1,7 +1,7 @@
 #import the flask library
-from flask import Flask, render_template
+from flask import Flask
 #Get the SDK for Alexa 
-from flask_ask import Ask, statement, question, session
+from flask_ask import Ask, statement, question
 #import os module to get environment variable
 import os
 #import random to get knock knock jokes
